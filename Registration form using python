@@ -1,6 +1,6 @@
 from Tkinter import *
 gva=Tk()
-gva.title("COMPANY")
+gva.title("COMPANY NAME")
 gva.geometry("400x500")
 a1=Label(gva,text="EMPLOYEE REGISTRATION
 FORM",fg='blue')
