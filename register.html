@@ -5,22 +5,20 @@
 </head>
 <body>
 
-<h2>Employee Registration Form</h2>
+<h2>Register Employee</h2>
 
-<form action="/register" method="POST">
-    <label>Name:</label><br>
-    <input type="text" name="name" required><br><br>
+<form action="/add" method="POST">
+    Name: <input type="text" name="name" required><br><br>
+    Email: <input type="email" name="email" required><br><br>
+    Department: <input type="text" name="department" required><br><br>
+    <button type="submit">Add Employee</button>
+</form>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+<h2>Delete Employee</h2>
 
-    <label>Phone:</label><br>
-    <input type="text" name="phone" required><br><br>
-
-    <label>Department:</label><br>
-    <input type="text" name="department" required><br><br>
-
-    <input type="submit" value="Register">
+<form action="/delete" method="POST">
+    Employee ID: <input type="number" name="id" required><br><br>
+    <button type="submit">Delete Employee</button>
 </form>
 
 </body>
